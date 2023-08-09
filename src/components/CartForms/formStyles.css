@@ -1,0 +1,53 @@
+.formContainer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'arial';
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+.datos {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.submitButton:enabled {
+    width: 7rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(22, 81, 117);
+    background-color: rgb(22, 81, 117);
+    color: white;
+    font-family: 'arial';
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.submitButton:enabled:hover {
+    border: 1px solid  rgb(49, 148, 209);
+    color:  white;
+    background-color: rgb(75, 186, 255);
+}
+
+.submitButton:disabled {
+    width: 7rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(45, 59, 68);
+    background-color: rgb(88, 102, 110);
+    color: white;
+    opacity: 0.5;
+    font-family: 'arial';
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+#confirmationText {
+    margin-top: 1rem;
+    font-family: 'arial';
+}

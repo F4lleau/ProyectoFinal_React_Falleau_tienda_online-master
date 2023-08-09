@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgb(22, 187, 96) 0%,
+    rgb(191, 231, 201) 100%
+  );
+  min-height: 100vh;
+}

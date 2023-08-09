@@ -1,0 +1,6 @@
+.DetailContainer {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin: 220px
+}
