@@ -10,15 +10,12 @@ const ContactPage = () => {
         alignItems: "center",
         maxWidth: "400px",
         color: "white",
+        margin: "150px"
       }}
     >
-      <h1>Contact</h1>
+      <h1>Contactanos</h1>
       <p>
-        El 18 de diciembre de 2022, la selección de argentina venció por penales
-        a Francia, en la histórica final de la Copa del Mundial de la FIFA, y se
-        consagró campeón del mundo después de 36 años, con un espectacular
-        Lionel Messi a la cabeza dentro de la cancha y un equipo que enamoró a
-        millones.
+      Si tienes prendas sin uso y en buen estado, contáctanos y únete a la tendencia de la moda circular. Renueva y Recicla- Moda circular en acción.
       </p>
     </div>
   );

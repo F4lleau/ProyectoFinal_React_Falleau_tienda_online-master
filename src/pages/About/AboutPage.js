@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const AboutPage = () => {
   return (
     <div
@@ -10,15 +11,12 @@ const AboutPage = () => {
         alignItems: "center",
         maxWidth: "400px",
         color: "white",
+        margin: "150px",
       }}
     >
-      <h1>About</h1>
+      <h1>Sobre nosotros</h1>
       <p>
-        El 18 de diciembre de 2022, la selección de argentina venció por penales
-        a Francia, en la histórica final de la Copa del Mundial de la FIFA, y se
-        consagró campeón del mundo después de 36 años, con un espectacular
-        Lionel Messi a la cabeza dentro de la cancha y un equipo que enamoró a
-        millones.
+      La misión de Renueva y Recicla- Moda Circular es extender la vida útil de las prendas, permitiendo que un mayor número de personas disfrute de su calidad y valor a lo largo del tiempo. Al hacerlo, contribuimos a la preservación del ambiente y promovemos la sostenibilidad en el mundo de la moda.  ¡Trabajemos juntos por un futuro más sostenible en la moda!
       </p>
     </div>
   );
