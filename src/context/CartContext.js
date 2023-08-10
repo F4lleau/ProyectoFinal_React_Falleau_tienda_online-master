@@ -1,5 +1,6 @@
 import React, {createContext, useState} from 'react';
-import { db } from '../firebase/firebaseConfig';
+import { db } from '../firebase/firebaseConfig'
+import { collection, addDoc } from "firebase/firestore";
 
 const CartContext = createContext();
 
@@ -54,7 +55,7 @@ function CartContextProvider({children}){
     };
     
     const getGrandTotal = () => {
-        return products.reduce((total , p) => (total += p.price * p.number), 0);
+        return products.reduce((total , p) => (total += p.precio * p.number), 0);
     };
 
     //Funciones para armar órdenes de compra en Firebase
@@ -76,26 +77,19 @@ function CartContextProvider({children}){
         }
 
         setCompra(buyerData);
-
-        const OrderCollection = db.collection("orders");
-        OrderCollection.add(buyerData)
+        
+        const OrderCollection = collection(db, "orders");
+        console.log(buyerData)
+        addDoc(OrderCollection, buyerData)
+        .get()
 
         .then((res) => {
-            OrderCollection.doc(res.id)
-            .get()
-            
-            .then((querySnapshot) =>{
-                if(!querySnapshot.exists){
-                    console.log("No existe")
-                } else {
-                    setCompra({
-                        id: querySnapshot.id, 
-                        ...querySnapshot.data()
+            console.log(res.id)
+            setCompra({
+                    id: res.id
                     })
-                }
-            })
-            .catch(error => console.log(error))
         })
+        
     }
 
     return(

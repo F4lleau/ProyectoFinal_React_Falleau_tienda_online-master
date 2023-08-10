@@ -37,7 +37,7 @@ function CartContainer() {
                         <p className="cartText">Cantidad: {product.number}</p>
                         <p className="cartText">Prenda: {product.prenda}</p>
                         <p className="cartText">Precio: ${product.precio}</p>
-                        <p className="cartText">Precio Total: ${product.price * product.number}</p>
+                        <p className="cartText">Precio Total: ${product.precio * product.number}</p>
                         <button className="deleteButton" onClick={() => handleDel(product)}>X</button>
                     </div> 
                 )

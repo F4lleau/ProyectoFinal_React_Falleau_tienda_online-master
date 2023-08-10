@@ -16,7 +16,7 @@ function ItemCount({details: {id, stock, precio, prenda}}){
 
     //Funciones y elementos del Context:
     
-    const { addProduct } = useContext(CartContext)  || {};
+    const { addProduct } = useContext(CartContext);
     const datos = {id, precio, prenda} 
 
 function more(){

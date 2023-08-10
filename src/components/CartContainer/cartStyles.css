@@ -1,3 +1,8 @@
+* {
+    font-family: 'Helvetica';
+}
+
+
 .wholeCart {
     height: 100%;
 }
@@ -6,18 +11,18 @@
     display: grid;
     grid-template-columns: repeat(1, auto);
     margin: 1rem;
-    font-family: 'Balsamiq Sans', cursive;
+ 
 }
 
 .CartContainer {
     display: grid;
     grid-template-columns: repeat(1, auto);
+    margin: 150px;
 }
 
 .totals {
     margin: 1rem;
     padding: 1rem;
-    font-family: 'Balsamiq Sans', cursive;
     font-size: 1rem;
     text-align: start;
 }
@@ -26,14 +31,12 @@
     display: grid;
     grid-template-columns: repeat(6, auto);
     text-align: center;
-    margin: 2rem;
-    font-family: 'Balsamiq Sans', cursive;
+    margin: 2rem;   
 }
 
 .emptyCart {
     padding: 0.5rem;
     margin: 1rem;
-    font-family: 'Balsamiq Sans', cursive;
 }
 
 .cartText {
@@ -46,7 +49,6 @@
     border: 1px solid rgb(22, 81, 117);
     background-color: rgb(22, 81, 117);
     color: white;
-    font-family: 'Balsamiq Sans', cursive;
     padding: 0.4rem;
     margin: 0.5rem;
 }
@@ -56,15 +58,14 @@
     border: 1px solid rgb(22, 81, 117);
     background-color: rgb(22, 81, 117);
     color: white;
-    font-family: 'Balsamiq Sans', cursive;
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .cartButton:hover {
-    border: 1px solid  rgb(49, 148, 209);
+    border: 1px solid  rgba(33, 147, 90, 0.605);
     color:  white;
-    background-color: rgb(75, 186, 255);
+    background-color: rgb(8, 73, 44);
 }
 
 .deleteButton:hover {

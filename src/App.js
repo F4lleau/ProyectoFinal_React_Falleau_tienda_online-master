@@ -26,9 +26,9 @@ const App = () => {
 
   return (
     <RopaUsadaProvider>
-      <CartContextProvider>
         <Router>
           <div className="App">
+          <CartContextProvider>
             <Header/> 
             <ResponsiveNavigation/>
             <Routes>
@@ -38,10 +38,11 @@ const App = () => {
               <Route path="/producto-detail/:id" element={<ProductoDetail/>} />
               <Route path="/categoria/:categoria" element={<CategoriaRopa/>} />
               <Route path="/carrito" element={<CartContainer/>} />
-            </Routes>   
+            </Routes> 
+            </CartContextProvider>  
           </div>
         </Router>
-      </CartContextProvider>
+
     </RopaUsadaProvider>
   );
 };
